@@ -12,7 +12,7 @@
     }
   },
   "scripts": {
-    "test": "tsc",
+    "test": "tsc -p jsconfig.json",
     "prepublish": "run test"
   },
   "repository": {
