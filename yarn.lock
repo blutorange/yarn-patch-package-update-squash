@@ -20,6 +20,8 @@ __metadata:
   dependencies:
     "@types/node": "npm:^22.13.4"
     typescript: "npm:5.7.3"
+  bin:
+    patch-update-squash: index.js
   languageName: unknown
   linkType: soft
 
