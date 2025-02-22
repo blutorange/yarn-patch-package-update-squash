@@ -1,5 +1,6 @@
 dist
 *.tgz
+*.tar
 
 .pnp.*
 .yarn/*
