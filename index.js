@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { spawnSync } from "node:child_process";
+import { resolve } from "node:path";
 import { cp, rm } from "node:fs/promises";
 
 const t1 = Date.now();
@@ -40,6 +41,7 @@ const pathPatched = jsonPatched.path;
 
 await rm(pathOriginal, { force: true, recursive: true });
 await cp(pathPatched, pathOriginal, { force: true, recursive: true });
+await rm(resolve(pathPatched, ".."), { force: true, recursive: true });
 
 const t2 = Date.now();
 const diff = t2 - t1;

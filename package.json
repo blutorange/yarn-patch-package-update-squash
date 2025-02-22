@@ -1,6 +1,6 @@
 {
   "name": "@xenorange/yarn-patch-package-update-squash",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "description": "Script that behaves similar to <yarn patch [package] --update>, but does not create a patch of packages.",
   "type": "module",
   "bin": {
