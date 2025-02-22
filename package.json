@@ -1,0 +1,40 @@
+{
+  "name": "@xenorange/yarn-patch-package-update-squash",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Script that behaves similar to <yarn patch [package] --update>, but does not create a patch of packages.",
+  "type": "module",
+  "bin": {
+    "patch-update-squash": "index.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "scripts": {
+    "test": "tsc",
+    "prepublish": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blutorange/yarn-patch-package-update-squash.git"
+  },
+  "keywords": [
+    "yarn",
+    "patch"
+  ],
+  "author": "Andre Wachsmuth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blutorange/yarn-patch-package-update-squash/issues"
+  },
+  "homepage": "https://github.com/blutorange/yarn-patch-package-update-squash#readme",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "yarn@4.6.0"
+}
